@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+ 
+</head>
+
+<body>
+
+  <div id="particles-js"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Intro Section without container -->
+  <div class="intro-section" id="introSection" data-aos="fade-up">
+    <div class="hi-text"><i class="fas fa-hand-peace"></i> Hey! I am Ayush...</div>
+    <p class="welcome-text"><i class="fas fa-code"></i> &lt;Welcome to My Portfolio&gt;</p>
+
+    <div class="nav-tabs">
+      <button class="nav-tab" onclick="showSection('aboutMeSection')"><i class="fas fa-user"></i> About</button>
+      <button class="nav-tab" onclick="showSection('educationSection')"><i class="fas fa-graduation-cap"></i>
+        Education</button>
+      <button class="nav-tab" onclick="showSection('projectsection')"><i class="fas fa-tools"></i> My projects</button>
+      <button class="nav-tab" onclick="showSection('certificatesSection')"><i class="fas fa-certificate"></i>
+        Certificates</button>
+      <button class="nav-tab" onclick="showSection('contactSection')"><i class="fas fa-envelope"></i> Contact</button>
+    </div>
+
+    <button class="start-btn" onclick="startPortfolio()">Start Exploring</button>
+  </div>
+
+  <!-- About Me -->
+  <div class="about-me" id="aboutMeSection" data-aos="fade-up">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <img src="./images/my photo.jpg" alt="Profile Picture" style="float: right; width: 200px;">
+    <p>Hello...<br>I'm <u><a target="_blank">AYUSH DHARMIK</a></u> from Tirora,dist-Gondia.<br>
+      I am a passionate Electronics and Telecommunication (ENTC) engineering student with a strong interest in embedded
+      systems. My goal is to become a skilled Embedded Engineer, and I actively pursue this path by working on hands-on
+      projects that deepen my technical understanding and creativity.<br>
+
+      Beyond academics, I have a keen interest in technology and enjoy exploring innovative solutions that merge
+      hardware with software. I also believe in maintaining a balanced lifestyle—sports play a big role in that. I am an
+      avid player of cricket, football, and badminton, which helps me stay energetic and focused.<br>
+
+      I’m always eager to learn, experiment, and grow—both as an engineer and as a person.<br>
+    <div class="social-links">
+
+      <a href="mailto:ayushdharmik025@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="scroll-btn" onclick="showSection('educationSection')">Education <i
+        class="fa-solid fa-arrow-down"></i></button>
+  </div>
+
+  <!-- Education -->
+  <div class="education-me" id="educationSection" data-aos="fade-up">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <p>
+    <p>
+      <b>Secondary School Certificate (SSC)</b>
+      Manoharbhai Patel Military School Gondia<br>
+      Achieved excellent academic results 93.20 % .<br><br>
+
+      <b>Higher Secondary Certificate (HSC)</b>
+      Siddharth High School and Junior College Thanegaon<br>
+      Achieved excellent academic results 86.83 % .<br><br>
+
+      <b>Bachelor of Technology (B.Tech) in Electronics and Telecommunication (ENTC)</b><br>
+      MIT Acadamy of Engineering Alandi, Pune | 2024-2028<br>
+      Apart from regular studies, I actively participate in technical events, projects,Workshop and club activity.<br>
+      I have made some projets using Ardiuno.<br><br>
+
+      Connect with me</a><br>
+      <b>Email:</b> <a href="mailto:ayushdharmik025@gmail.com">ayushdharmik025@gmail.com</a><br>
+      <b>Email:</b> <a href="mailto:202401070221@mitaoe.ac.in">202401070221@mitaoe.ac.in</a>
+    </p>
+    <button class="scroll-btn" onclick="showSection('projectsection')">My Projects <i
+        class="fa-solid fa-arrow-down"></i></button>
+  </div>
+
+  <!-- My Projects Section -->
+  <div class="skills-me" id="projectsection" data-aos="fade-up">
+    <h1><i class="fas fa-tools"></i> My Projects</h1>
+    <!-- project 1 -->
+    <div class="project-container">
+      <h2>Project 1: Anti-Sleep System for Drivers</h2>
+      <div class="project-image">
+        <div>
+          <img src="./images/Anti sleep system.jpg" alt="Anti-Sleep System">
+
+        </div>
+        <p>This system detects signs of drowsiness using IR sensors and alerts the driver using a buzzer and LED,
+          helping reduce road accidents.</p>
+
+      </div>
+      <!-- proj 2 -->
+      <div class="project-container">
+        <h2>Project 2: Ambulance Siren on Breadboard</h2>
+
+        <div class="project-image">
+          <div>
+            <img src="./images/ambulance siren.jpg" alt="Ambulance Siren on Breadboard">
+
+          </div>
+          <p>A basic project that simulates an ambulance siren using a 555 timer and speaker on a breadboard to
+            understand sound waveform generation.</p>
+
+        </div>
+
+      </div>
+      <!-- project 3 -->
+      <div class="project-container">
+        <h2>Project 3: Obstacle Avoiding Car</h2>
+
+        <div class="project-image">
+          <div>
+            <img src="./images/obstacle avoiding car.jpg" alt="Obstacle Avoiding Car">
+
+          </div>
+          <p>This autonomous car uses ultrasonic sensors to detect and avoid obstacles in real-time using Arduino
+            programming and motor control.</p>
+
+        </div>
+
+      </div>
+      <button class="scroll-btn" onclick="showSection('certificatesSection')">Certificates <i
+          class="fa-solid fa-arrow-down"></i></button>
+    </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="certificates-me" id="certificatesSection" data-aos="fade-up">
+      <h2><i class="fas fa-certificate"></i> Certificates</h2>
+      <p>My Certificates:</p>
+      <div class="certificate-grid">
+        <div class="certificate-item">
+          <h3>Bootcamp Certificate</h3>
+          <img src="./images/Bootcamp certificate.png" alt="Bootcamp Certificate">
+        </div>
+        <div class="certificate-item">
+          <h3>Python Essentials 1</h3>
+          <img src="./images/python 1.png" alt="Python 1">
+        </div>
+        <div class="certificate-item">
+          <h3>Python Essentials 2</h3>
+          <img src="./images/python 2.png" alt="Python 2">
+        </div>
+          <div class="certificate-item">
+            <h3>Digital Marketing</h3>
+            <img src="./images/digital marketing.jpg" alt="Digital Marketing">
+          </div>
+          <div class="certificate-item">
+            <h3>Datathon</h3>
+            <img src="./images/datathon.png" alt="Datathon">
+          </div>
+      </div>
+      
+      </div>
+      <button class="scroll-btn" onclick="showSection('contactSection')">Contact Me <i
+          class="fa-solid fa-arrow-down"></i></button>
+    </div>
+  
+
+    <!-- Contact Me -->
+    <div class="contact-me" id="contactSection" data-aos="fade-up">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <form id="contactForm">
+        <label><b>Name:</b></label>
+        <input type="text" required>
+        <label><b>Email:</b></label>
+        <input type="email" required>
+        <label><b>Message:</b></label>
+        <textarea rows="4" placeholder="I'd love to hear from you!" required></textarea>
+        <button type="submit" class="scroll-btn">Send Message</button>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      AOS.init();
+
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle", polygon: { nb_sides: 5 } },
+          opacity: { value: 0.5 },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 4 }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" }
+          },
+          modes: {
+            grab: { distance: 200, line_linked: { opacity: 0.7 } },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      });
+
+      function startPortfolio() {
+        document.getElementById('introSection').style.display = 'none';
+        document.getElementById('aboutMeSection').style.display = 'block';
+      }
+
+      function showSection(id) {
+        document.getElementById('introSection').style.display = 'none';
+        document.querySelectorAll('.about-me, .education-me, .skills-me, .certificates-me, .contact-me')
+          .forEach(sec => sec.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      }
+
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been sent.");
+      });
+
+      // Scroll to top button
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        scrollTopBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+      };
+      scrollTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+</body>
+
+</html>
